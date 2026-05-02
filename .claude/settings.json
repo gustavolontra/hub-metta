@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"/Users/gustavolontra/vs code/hub-metta\" status)",
+      "Bash(git -C \"/Users/gustavolontra/vs code/hub-metta\" remote -v)",
+      "Bash(git -C \"/Users/gustavolontra/vs code/hub-metta\" log --oneline -5)"
+    ]
+  }
+}
