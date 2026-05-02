@@ -71,21 +71,14 @@
     }
 
     .brand {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.55rem;
-      font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
     }
 
-    .brand-mark {
-      width: 22px;
-      height: 22px;
-      transform: rotate(45deg);
-      background: var(--accent);
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(44, 213, 196, 0.3);
+    .brand img {
+      height: 28px;
+      width: auto;
+      display: block;
     }
 
     .search {
@@ -408,8 +401,7 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>metta</span>
+        <img src="logo-metta.png" alt="metta">
       </div>
 
       <div class="search">
