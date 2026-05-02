@@ -272,6 +272,43 @@
     .card[data-tone="indigo"] .card-icon { background: #EEF1FE; color: #3B5BDB; border-color: #DEE3FB; }
     .card[data-tone="green"] .card-icon { background: var(--green-soft); color: #047857; border-color: #D1FAE5; }
     .card[data-tone="slate"] .card-icon { background: #F3F4F6; color: #475569; border-color: #E5E7EB; }
+    .card[data-tone="pink"] .card-icon { background: #FDECF4; color: #B41360; border-color: #FBD7E6; }
+
+    .card.featured {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.75rem;
+      min-height: 0;
+      padding: 1.5rem 1.75rem;
+    }
+
+    .card.featured .card-head {
+      margin-bottom: 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .card.featured .card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .card.featured .card-desc {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .card.featured .card-footer {
+      border: none;
+      padding: 0;
+      flex-shrink: 0;
+      gap: 1rem;
+    }
 
     .tag {
       font-size: 0.7rem;
@@ -392,6 +429,9 @@
       .greeting h1 { font-size: 1.35rem; }
       .grid { grid-template-columns: 1fr; }
       .card { min-height: 0; padding: 1.25rem; }
+      .card.featured { flex-direction: column; align-items: stretch; gap: 1rem; padding: 1.25rem; }
+      .card.featured .card-head { flex-direction: row; align-items: flex-start; justify-content: space-between; }
+      .card.featured .card-footer { justify-content: space-between; }
       footer { padding: 1.25rem 1rem 1.75rem; }
     }
   </style>
@@ -523,6 +563,38 @@
         <p class="card-desc">Dúvidas operacionais e procedimentos do dia a dia da equipe.</p>
         <div class="card-footer">
           <span class="card-meta">faq.appmetta.com</span>
+          <span class="ghost-btn">
+            Acessar
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="card featured" data-tone="pink" href="https://mettaempresas.com.vc" target="_blank" rel="noopener noreferrer">
+        <div class="card-head">
+          <div class="card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"></path>
+              <path d="M5 21V7l7-4 7 4v14"></path>
+              <path d="M9 9h.01"></path>
+              <path d="M9 13h.01"></path>
+              <path d="M9 17h.01"></path>
+              <path d="M15 9h.01"></path>
+              <path d="M15 13h.01"></path>
+              <path d="M15 17h.01"></path>
+            </svg>
+          </div>
+          <span class="tag"><span class="dot"></span>Site comercial</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Metta Empresas</h3>
+          <p class="card-desc">Página comercial para clientes e empresas — recrutamento, seleção e administração de estagiários.</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-meta">mettaempresas.com.vc</span>
           <span class="ghost-btn">
             Acessar
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
